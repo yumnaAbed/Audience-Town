@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Summation of Two Numbers</title>
+		<script>
+			function summation(text1, text2){
+				var x=document.getElementById(text1).value;
+				var y=document.getElementById(text2).value;
+				var sum=0;
+				sum=Number(x)+Number(y);
+                document.getElementById('answer').value=sum;
+			}
+		</script>
+	</head>
+<body>
+	<b>Enter first Number: </b><br>
+	<input type="text" id="n1"/><br>
+	<b>Enter second Number: </b><br>
+	<input type="text" id="n2"/><br><br>
+    <b>Answer: </b><br>
+    <input type="text" id="answer"/><br>
+	<input type="button" id="btn" value="answer" onClick="summation('n1','n2')"/>
+</body>
+
+</html>
